@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://liuwentao2.github.io</id>
+    <title>Winter&apos;s blog</title>
+    <updated>2022-09-07T03:27:45.513Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://liuwentao2.github.io"/>
+    <link rel="self" href="https://liuwentao2.github.io/atom.xml"/>
+    <subtitle>Before being a man, be a man.</subtitle>
+    <logo>https://liuwentao2.github.io/images/avatar.png</logo>
+    <icon>https://liuwentao2.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, Winter&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[播客记录]]></title>
+        <id>https://liuwentao2.github.io/post/bo-ke-ji-lu/</id>
+        <link href="https://liuwentao2.github.io/post/bo-ke-ji-lu/">
+        </link>
+        <updated>2022-09-07T03:23:52.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>文化圈层聊开去，把积极讨论的风吹到更广阔的领域里去，而不是只局限在性别、意识形态领域里，除了公共事务，私人事务也值得被文化圈层讨论。</li>
+<li>富文本化——自己的记录，未来的媒介可以有一种富文本化走向，不一定要是纯文本、纯视频或者纯音频，可以是富文本的。我可以先写下来内容然后读出来感想部分，然后把引文用文字写出来。</li>
+<li>如果说民族主义是以民族为最高价值所依，那么男权是以性别为最高价值所依——在是个人之前，是个男人。</li>
+<li>人的光芒闪耀，穿透性别所产生的枷锁。</li>
+<li>女性创造生命，男人要创造生命之外的一切——各个领域：艺术、文化、经济、工程。</li>
+<li>一些不理解的想法不可怕，通过非文化手段拓展接触的人群，让大家开始了解它。</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[剪藏文章的一些方法]]></title>
+        <id>https://liuwentao2.github.io/post/ru-he-jian-cang-wen-zhang/</id>
+        <link href="https://liuwentao2.github.io/post/ru-he-jian-cang-wen-zhang/">
+        </link>
+        <updated>2022-02-18T13:17:02.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="引子">引子</h2>
+<p>以前，剪藏这件事情一般都是放在印象笔记里，移动端出现之后，在手机上对文章进行高亮成了一个额外的需求，cubox是在满足需求的佼佼者，所以从主力上，我把读过的文章都会发到cubox上，同时转换成纯文本用来留存，一方面是有的文章要进行高亮和笔记，另外一方面也避免部分文章404。</p>
+<p>问题出现在技术文章的解析上，很大一部分技术文章是包含有代码段的，cubox能够进行解析，但是仍然存在误解析的情况，为了追求能把所有的文章都收藏下来，整理了一堆能够进行剪藏的东西。</p>
+<h2 id="cuboxinstapaperpocket">Cubox/Instapaper/Pocket</h2>
+<p>电脑有chrome插件可以收藏，手机上的文章可以发给企业号，或者进入软件直接读取剪切板，instapaper和pocket也是类似的操作，大部分文章可以被很好的收藏。其中后两个如果要全文搜索需要付费，cubox的话因为是国内应用比两者便宜一点。</p>
+<h2 id="twilar">Twilar</h2>
+<p>同类型的软件，我还找到了一个叫做twilar的，也能够实现类似的功能。因为不依赖服务器，所以是买断制的，非会员可以用除了高亮之外的一些基础功能，搜索也是可用的。从解析结果来看，可以和cubox的一些错误解析进行一定程度的互补。</p>
+<h2 id="matter">Matter</h2>
+<p>手机上可以直接收藏，电脑上有插件可以用，能够进入阅读模式和save to queue. 不足是手机上收藏的内容，在电脑上看不到，读文章只能用客户端。这个只能等等看matter后面会不会对网页、插件功能做更多的支持了。</p>
+<h2 id="craftobsidian">craft/obsidian</h2>
+<p>只要能转换成markdown，那么就可以把剪藏的内容存储到笔记里，并且笔记也是天然可被搜索的，问题是如何能够把url转换成一个markdown格式呢？</p>
+<h3 id="简悦">简悦</h3>
+<p>电脑上可以用chrome插件，比如简悦，输出的md是很标准的，而且几乎不会出现问题。简悦也有iOS版本，是通过开发工具jsbox实现的。但是这一条路并不是非常通畅，有两个问题：一是，jsbox目前需要付费使用，并且是订阅制的，价格为58人民币/年；二是，iOS上的解析引擎和chrome插件版本的是不同的，以及一些其他的原因（比如浏览器对客户端和电脑端的渲染是有区别的），所以在手机上的结果可能不如在chrome上完美。</p>
+<h3 id="服务">服务</h3>
+<p>除此之外，我还想到另外一个思路是找一个website to md的服务来实现。找了很久之后，终于找到了一个能够实现功能的：<a href="https://devtool.tech/html-md">https://devtool.tech/html-md</a>，看了一下网络请求，应该是没有做鉴权的，所以这个接口是可以拿来用的，在此对作者表示感谢。这个解析器能否解析所有网页，恐怕也是很难的，只能作为其中一种手段。</p>
+<h3 id="obsidian插件">obsidian插件</h3>
+<p>让我意外的是，obsidian的插件市场上有一个插件，能够实现extract content from url，选中一段网站地址的文本，执行一下命令就可以提取出对应的内容转换成md格式，电脑手机都能用。</p>
+<h2 id="尾声">尾声</h2>
+<p>以上是我这几天找到的一些工具，在这里分享给所有人。如果你读到了这里，并且你也有好的工具，也希望你能在互联网上添砖加瓦，给其他人提供一些思路。</p>
+<p>另外，特别想要提醒的是，工具只是工具，人、内容和执行起一个workflow才是最重要的。与君共勉。谢谢你耐心的阅读，再见。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021.12.7]]></title>
+        <id>https://liuwentao2.github.io/post/2021127/</id>
+        <link href="https://liuwentao2.github.io/post/2021127/">
+        </link>
+        <updated>2021-12-07T13:40:28.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>用github-page和<a href="https://gridea.dev/">gridea</a>搭建了一个静态博客，同步了昨天动态博客的博文。gridea只需要配置token，在编辑器里写markdown能够达到动态博客发布的体验，而且是开源项目，非常不错。</li>
+<li>年龄的增长是润物无声的，需要时刻提醒自己，不要滑向“油腻的中年人”的深渊。提醒管理、时间管理和精力管理很重要，首先在吃、喝、睡和动上，不能向他们看齐。其次是精神上的，不断地去补充新鲜的养分，不能固步自封。如果社会资源和经济基础没有达到中年标准，形体和精神靠拢了，这是非常可怕的。</li>
+<li>把更多的思考留存在自己的空间里：可以是各种类型的笔记本里，也可以是博客日志里。多读多思考。反之，在一件事情自己的想法不具备准确性和专业性的时候，不要为了追求一时的表达欲，想对其他人的思考产生影响。</li>
+<li>阅读一段文字、一篇文章或者是一本书，前面读起来会感觉艰涩，从读者的角度来看叫“读不动”。但是只要阅读超过了一定时间长度，阅读体验就顺畅了起来。这种体验有一点像跑步——虽然我在跑步或其他运动很少有过类似的体验，但是我是了解的——越过了一个平台期，越跑越轻松起来。很多的「太长不读」会被埋没在前半段的体验里。这种体验可能（我还没有验证过）说明了一个道理：阅读文字是需要进行锻炼的，它也有进入心流状态的过程。并且在反复练习之后，会越来越容易掌握越过这个门槛的技巧。这一点是在阅读豆瓣博主#室内滂沱 写的一篇关于他和另一位博主#邓安庆 相识的故事时，突然想到的。</li>
+<li>protocol在现在变得稀缺，可能会有再次被重视的一天。</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我的第一篇博客]]></title>
+        <id>https://liuwentao2.github.io/post/wo-de-di-yi-pian-bo-ke/</id>
+        <link href="https://liuwentao2.github.io/post/wo-de-di-yi-pian-bo-ke/">
+        </link>
+        <updated>2021-12-07T08:36:01.000Z</updated>
+        <content type="html"><![CDATA[<p>思考了一段时间，重新开放了自己的博客。采用了老套的技术方案——阿里云轻量服务+Wordpress，选择了一个简洁的主题。专注于内容写作。</p>
+<p>近一段时间，通过笔记软件（如Obsidian、flomo）积累了很多生活上的和技术上的笔记，在阅读上逐步收敛：读书，看严肃报道，也浏览社交网络上一些有趣的博文。这些东西都值得被记录，我的博客记录同时也会使用GitHub Page部署静态博客的方案留存下来。</p>
+<p>这里是我的精神自留地，目的是记录下生活中的点滴碎片。如果你阅读到我的博客，这是一个生活中美丽的意外。如果可以给你带来一些技术经验上的便利，或者对生活的热爱，那它存在的意义就超出预期了。</p>
+<p>祝你今天快乐。</p>
+]]></content>
+    </entry>
+</feed>
